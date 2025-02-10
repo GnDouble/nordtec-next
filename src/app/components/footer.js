@@ -14,7 +14,7 @@ const Footer = () => {
       </div> */}
        {/* Kontaktformular im Footer */}
       <div className="lg:col-span-2">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-6">Kontaktieren Sie uns</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-6 pl-4">Kontaktieren Sie uns</h2>
         <ContactForm />
       </div>
 
