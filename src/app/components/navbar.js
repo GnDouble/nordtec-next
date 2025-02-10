@@ -6,15 +6,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-600 p-4">
+    <nav className=" bg-gray-600 p-4 ">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-2xl">IMAGE XXXX</div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-6 text-white">
+        <ul className="hidden md:flex space-x-6 text-[#fbbf24]">
           <li>Startseite</li>
-          <li>Über uns</li>
           <li>Leistungen</li>
+          <li>Über uns</li>
           <li>Kontakt</li>
           <li>Karriere</li>
         </ul>

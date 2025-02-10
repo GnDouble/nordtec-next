@@ -4,17 +4,12 @@ import ContactForm from "./contactForm";
 
 const Footer = () => {
   return (
-    <footer className="bg-white lg:grid lg:grid-cols-5">
-      {/* <div className="relative block h-32 lg:col-span-2 lg:h-full">
-        <img
-          src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-      </div> */}
-       {/* Kontaktformular im Footer */}
+    <footer className="bg-slate-200 lg:grid lg:grid-cols-5">
+      {/* Kontaktformular im Footer */}
       <div className="lg:col-span-2">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-6 pl-4">Kontaktieren Sie uns</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-6 pl-4">
+          Kontaktieren Sie uns
+        </h2>
         <ContactForm />
       </div>
 
@@ -77,19 +72,21 @@ const Footer = () => {
           </div>
         </div>
         {/* Rechts-Links */}
-        <div className="mt-8 text-center">
-                  <ul className="flex justify-center gap-6 text-sm text-gray-700">
-                      <li> &copy; 2025 by NORDTEC</li>
-            <li>
-              <a href="/impressum" className="hover:opacity-75">
-                Impressum
-              </a>
-            </li>
-            <li>
-              <a href="/datenschutzerklaerung" className="hover:opacity-75">
-                Datenschutzerklärung
-              </a>
-            </li>
+        <div className="mt-8">
+          <ul className="flex justify-between text-sm text-gray-700">
+            <li> &copy; 2025 by NORDTEC</li>
+            <div className="flex gap-6">
+              <li>
+                <a href="/impressum" className="hover:opacity-75">
+                  Impressum
+                </a>
+              </li>
+              <li>
+                <a href="/datenschutzerklaerung" className="hover:opacity-75">
+                  Datenschutzerklärung
+                </a>
+              </li>
+            </div>
           </ul>
         </div>
       </div>

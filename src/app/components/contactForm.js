@@ -6,7 +6,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("mdkadrrq");
   if (state.succeeded) {
     return (
-      <p className="text-center text-xl font-semibold text-green-600">
+      <p className="text-center text-xl font-semibold bg-blue-600">
         Vielen Dank für Ihr Vertrauen!
       </p>
     );
@@ -50,6 +50,7 @@ function ContactForm() {
           type="email"
           name="email"
           required
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" // Basic email format validation
           className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
         <ValidationError
@@ -109,7 +110,8 @@ function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full py-2 px-4 pb-4 text-white font-semibold rounded-md shadow-md  "
+              style={{ backgroundColor: "var(--highlight-color)" }}
       >
         {state.submitting ? "Senden..." : "Absenden"}
       </button>
