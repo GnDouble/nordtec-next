@@ -1,25 +1,25 @@
 import React from "react";
 
-const email_url = "/mail.svg"; // Korrekte URL für Dateien im public-Ordner
-const phone_url = "/phone.svg"; // Korrekte URL für Dateien im public-Ordner
+const email_url = "/mail.svg"; 
+const phone_url = "/phone.svg"; 
 
 function Contact() {
   return (
-    <div className="text-center">
-      <h1 className="font-bold">Kontakt</h1>
-      <p>NORDTEC Elektrotechnik</p>
-      <p>Adresse XXXX</p>
-      <div className="flex items-center space-x-2 justify-center">
-        <h2 className="font-bold">E-Mail</h2>
+    <div className="text-left space-y-4">
+      <h1 className="font-bold text-2xl">Kontakt</h1>
+  
+
+      <div className="flex items-center space-x-2">
+        <h2 className="font-bold text-lg">E-Mail</h2>
         <img src={email_url} alt="E-Mail" className="w-6 h-6 opacity-80" />
       </div>
+      <a href="mailto:info@nordtec-elektro.de?subject=Kontantanfrage">info@nordtec-elektro.de</a><p className="text-lg"></p>
 
-      <p>info@nordtec-elektro.de</p>
-      <div className="flex items-center space-x-1 justify-center">
-        <h2 className="font-bold">Telefon</h2>
+      <div className="flex items-center space-x-2">
+        <h2 className="font-bold text-lg">Telefon</h2>
         <img src={phone_url} alt="Telefon" className="w-6 h-6 opacity-80" />
       </div>
-      <p>0176/73582752</p>
+      <a href="tel:+4917673582752">0176/73582752</a>
     </div>
   );
 }
