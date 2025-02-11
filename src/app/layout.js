@@ -1,5 +1,6 @@
-import { Inter,Geist, Geist_Mono } from "next/font/google";
+import { Inter, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -19,7 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="de">
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        {children}
+        <ScrollToTop />
+      </body>
     </html>
   );
 }

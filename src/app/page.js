@@ -5,11 +5,13 @@ import Hero from "./components/hero";
 import Footer from "./components/footer";
 import Mainsection from "./components/mainsection";
 import RightsFooter from "./components/rights";
+import Welcome from "./components/welcome";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
+      {/* <Welcome /> */}
       <Hero />
       <Mainsection />
       <Footer />

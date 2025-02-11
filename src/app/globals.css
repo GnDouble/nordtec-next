@@ -6,16 +6,20 @@
   --bg: slate-200;
   --fg: gray-700;
   --highlight-color: #fbbf24;
-  --primary-color: #4169E1;
-  --footer-bg:#4169E1;
+  --primary-color: #4169e1cf;
+  --footer-bg:#4169e1cf;
   --card-bg:#ffffff;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: slate-200;
     --foreground: gray-700;
-    --primary-color:#4169E1;
+    --primary-color:#4169e1cf;
   }
 }
 @font-face {

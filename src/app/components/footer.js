@@ -51,7 +51,7 @@ const WhatsAppIcon = () => (
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-200 flex flex-col lg:flex-row items-center lg:items-start p-8">
+    <footer id="kontakt" className="bg-slate-200 flex flex-col lg:flex-row items-center lg:items-start p-8">
       {/* Left Side - Contact Info */}
       <div className="lg:w-1/3 text-center lg:text-left">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">KONTAKT</h2>
@@ -87,9 +87,6 @@ const Footer = () => {
 
       {/* Right Side - Contact Form */}
       <div className="lg:w-2/3 mt-8 lg:mt-0 lg:pl-12">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-          Kontaktieren Sie uns
-        </h2>
         <ContactForm />
       </div>
     </footer>
