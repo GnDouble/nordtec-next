@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function Hero() {
   return (
@@ -29,10 +30,12 @@ function Hero() {
         </div>
       </div>
       <div className="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative isolate z-10">
-        <img
+        <Image
           className="rounded-3xl w-full h-full object-cover"
-          src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8c2VydmljZXxlbnwwfDB8fHwxNzEyMjIyNjQ3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-          alt=""
+          src="/multiM.webp"
+          width={800} 
+          height={600}
+          alt="Elektriker-Ingenieur verwendet ein Multimeter, um die elektrische Installation und Stromleitung in einem elektrischen System-Schaltschrank zu testen."
         />
       </div>
     </div>
