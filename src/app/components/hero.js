@@ -3,7 +3,8 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div id="#hero"
+    <div
+      id="#hero"
       className=" w-full px-7 lg:px-10 max-w-full mx-auto flex flex-col gap-y-10 lg:flex-row items-center gap-x-10 justify-center py-10 lg:py-14"
       style={{ backgroundColor: "var(--bg)", color: "var(--fg)" }}
     >
@@ -31,9 +32,9 @@ function Hero() {
           </a>
         </div>
       </div>
-      <div className="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative isolate z-10">
+      <div className="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative z-0">
         <Image
-          className="rounded-3xl w-full h-full object-cover"
+          className="rounded-3xl w-full h-full"
           src="/multiM.webp"
           width={800}
           height={600}

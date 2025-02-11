@@ -9,7 +9,7 @@ const RightsFooter = () => {
       <a href="#">
         <p className="my-0.5">Datenschutz</p>
           </a>
-        <a href="#">
+        <a href="#hero">
               <p className="my-0.5">&copy; 2025 NORDTEC Alle Rechte vorbehalten.</p>
             </a>
     </footer>
