@@ -29,7 +29,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="p-4 bg-primary-color">
+    <nav id="nav" className="p-4 bg-primary-color">
       <div className="container mx-auto flex justify-between items-center">
         <div>IMAGE XXXX</div>
 

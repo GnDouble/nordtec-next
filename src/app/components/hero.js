@@ -4,7 +4,7 @@ import Image from "next/image";
 function Hero() {
   return (
     <div
-      id="#hero"
+      id="hero"
       className=" w-full px-7 lg:px-10 max-w-full mx-auto flex flex-col gap-y-10 lg:flex-row items-center gap-x-10 justify-center py-10 lg:py-14"
       style={{ backgroundColor: "var(--bg)", color: "var(--fg)" }}
     >

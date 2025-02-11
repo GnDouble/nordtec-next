@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center gap-8 p-6 lg:p-12 bg-gray-100 rounded-3xl shadow-lg">
+    <section id="about" className="flex flex-col lg:flex-row items-center gap-8 p-6 lg:p-12 bg-gray-100 rounded-3xl shadow-lg">
       {/* Bild */}
       <div className="w-full lg:w-1/2">
         <Image
