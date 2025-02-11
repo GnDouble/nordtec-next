@@ -6,37 +6,34 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" bg-gray-600 p-4 ">
+    <nav className="p-4 bg-primary-color">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-2xl">IMAGE XXXX</div>
+        <div>IMAGE XXXX</div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-6 text-[#fbbf24]">
-          <li>Startseite</li>
-          <li>Leistungen</li>
-          <li>Über uns</li>
-          <li>Kontakt</li>
-          <li>Karriere</li>
+        <ul className="hidden md:flex space-x-6">
+          <li><a href="#">Startseite</a></li>
+          <li><a href="#">Leistungen</a></li>
+          <li><a href="#">Über uns</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Karriere</a></li>
         </ul>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
           ☰
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-blue-700 p-4 absolute top-16 left-0 w-full transition-transform">
-          <ul className="flex flex-col space-y-4 text-white text-center">
-            <li onClick={() => setIsOpen(false)}>Startseite</li>
-            <li onClick={() => setIsOpen(false)}>Über uns</li>
-            <li onClick={() => setIsOpen(false)}>Leistungen</li>
-            <li onClick={() => setIsOpen(false)}>Kontakt</li>
-            <li onClick={() => setIsOpen(false)}>Karriere</li>
+        <div className="md:hidden bg-primary-color p-4 absolute top-16 left-0 w-full transition-transform">
+          <ul className="flex flex-col space-y-4 text-center">
+            <li onClick={() => setIsOpen(false)}><a href="#">Startseite</a></li>
+            <li onClick={() => setIsOpen(false)}><a href="#">Leistungen</a></li>
+            <li onClick={() => setIsOpen(false)}><a href="#">Über uns</a></li>
+            <li onClick={() => setIsOpen(false)}><a href="#">Kontakt</a></li>
+            <li onClick={() => setIsOpen(false)}><a href="#">Karriere</a></li>
           </ul>
         </div>
       )}

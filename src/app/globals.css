@@ -6,12 +6,16 @@
   --bg: slate-200;
   --fg: gray-700;
   --highlight-color: #fbbf24;
+  --primary-color: #4169E1;
+  --footer-bg:#4169E1;
+  --card-bg:#ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: slate-200;
     --foreground: gray-700;
+    --primary-color:#4169E1;
   }
 }
 
@@ -21,3 +25,39 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+  background-color: #4169E1; 
+}
+nav a {
+  color: white; 
+}
+nav a:hover {
+  color: #fbbf24; 
+}
+
+header {
+  background-color: #e5e7eb; 
+  color: #4169E1; 
+}
+header p {
+  color: #374151; 
+}
+
+button {
+  background-color: #4169E1; 
+  color: white;
+}
+
+button:hover {
+  background-color: #304995; 
+}
+footer {
+  background-color: var(--footer-bg); 
+  color: white;
+}
+footer a {
+  color: white; 
+}
+footer a:hover {
+  color: var(--highlight-color); 
+}

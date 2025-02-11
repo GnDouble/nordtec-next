@@ -16,15 +16,13 @@ function Hero() {
         <div className="flex gap-x-5 flex-col gap-y-2.5 lg:flex-row">
           <a
             href="#"
-            className="flex w-full lg:w-fit items-center text-white justify-center rounded-lg bg-[#1053F3] px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200"
-            style={{ backgroundColor: "var(--highlight-color)" }}
+            className="flex w-full lg:w-fit bg-primary-color items-center text-white justify-center rounded-lg px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200"
           >
             <span>Leistungen</span>
           </a>
           <a
             href="#"
             className="flex w-full lg:w-fit items-center text-gray-600 justify-center rounded-lg border border-[#6A65FF] px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200"
-            style={{ borderColor: "var(--highlight-color)" }}
           >
             <span>Über uns</span>
           </a>

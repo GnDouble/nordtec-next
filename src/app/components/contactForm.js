@@ -6,7 +6,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("mdkadrrq");
   if (state.succeeded) {
     return (
-      <p className="text-center text-xl font-semibold bg-blue-600">
+      <p className="text-center text-xl font-semibold">
         Vielen Dank für Ihr Vertrauen!
       </p>
     );
@@ -18,7 +18,7 @@ function ContactForm() {
       <div>
         <label
           htmlFor="name"
-          className="block text-lg font-medium text-gray-700 pl-4"
+          className="block text-lg font-medium pl-4"
         >
           Ihr Name
         </label>
@@ -27,7 +27,7 @@ function ContactForm() {
           type="text"
           name="name"
           required
-          className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2"
         />
         <ValidationError
           prefix="Name"
@@ -41,7 +41,7 @@ function ContactForm() {
       <div>
         <label
           htmlFor="email"
-          className="block text-lg font-medium text-gray-700 pl-4"
+          className="block text-lg font-medium pl-4"
         >
           E-Mail-Adresse
         </label>
@@ -51,7 +51,7 @@ function ContactForm() {
           name="email"
           required
           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" // Basic email format validation
-          className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2"
         />
         <ValidationError
           prefix="Email"
@@ -65,7 +65,7 @@ function ContactForm() {
       <div>
         <label
           htmlFor="subject"
-          className="block text-lg font-medium text-gray-700 pl-4"
+          className="block text-lg font-medium pl-4"
         >
           Betreff
         </label>
@@ -74,7 +74,7 @@ function ContactForm() {
           type="text"
           name="subject"
           required
-          className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2"
         />
         <ValidationError
           prefix="Subject"
@@ -88,7 +88,7 @@ function ContactForm() {
       <div>
         <label
           htmlFor="message"
-          className="block text-lg font-medium text-gray-700 pl-4"
+          className="block text-lg font-medium pl-4"
         >
           Ihre Nachricht
         </label>
@@ -96,7 +96,7 @@ function ContactForm() {
           id="message"
           name="message"
           required
-          className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2"
         />
         <ValidationError
           prefix="Message"
@@ -110,8 +110,7 @@ function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-              className="w-full py-2 px-4 pb-4 text-white font-semibold rounded-md shadow-md  "
-              style={{ backgroundColor: "var(--highlight-color)" }}
+        className="w-full py-2 px-4 pb-4 text-white font-semibold rounded-md shadow-md"
       >
         {state.submitting ? "Senden..." : "Absenden"}
       </button>
