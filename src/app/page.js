@@ -6,6 +6,8 @@ import Footer from "./components/footer";
 import Mainsection from "./components/mainsection";
 import RightsFooter from "./components/rights";
 import Welcome from "./components/welcome";
+import Termin from "./components/termin";
+import AboutUs from "./components/about";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <Navbar />
       {/* <Welcome /> */}
       <Hero />
+      <AboutUs />
+      <Termin />
       <Mainsection />
       <Footer />
       <RightsFooter />

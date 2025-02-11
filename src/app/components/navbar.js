@@ -14,9 +14,8 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-6">
           <li><a href="#hero">Startseite</a></li>
           <li><a href="#">Leistungen</a></li>
-          <li><a href="#">Über uns</a></li>
+          <li><a href="#about">Über uns</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
-          <li><a href="#">Karriere</a></li>
         </ul>
 
         {/* Mobile Menu Button */}

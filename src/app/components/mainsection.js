@@ -3,10 +3,11 @@ import Image from "next/image";
 
 function Mainsection() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+  
+    <div className="grid grid-cols-2 gap-8 md:gap-4 mt-8">
       {/* Responsive Grid */}
       <div className="p-6 shadow-lg">
-        <h2>Feature 1</h2>
+        <h2>Terminplanung</h2>
         <p>Nordtec auf die 1. Seite von Google bringen.</p>
       </div>
       <div className="p-6 shadow-lg">

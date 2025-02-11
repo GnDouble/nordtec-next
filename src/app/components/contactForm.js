@@ -16,11 +16,8 @@ function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       {/* Name-Feld */}
       <div>
-        <label
-          htmlFor="name"
-          className="block text-lg font-medium pl-4"
-        >
-          Ihr Name
+        <label htmlFor="name" className="block text-lg font-medium pl-4">
+          Name <span className="text-red-500">*</span>
         </label>
         <input
           id="name"
@@ -39,18 +36,15 @@ function ContactForm() {
 
       {/* E-Mail-Feld */}
       <div>
-        <label
-          htmlFor="email"
-          className="block text-lg font-medium pl-4"
-        >
-          E-Mail-Adresse
+        <label htmlFor="email" className="block text-lg font-medium pl-4">
+          E-Mail-Adresse <span className="text-red-500">*</span>
         </label>
         <input
           id="email"
           type="email"
           name="email"
           required
-          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" // Basic email format validation
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
           className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2"
         />
         <ValidationError
@@ -61,12 +55,30 @@ function ContactForm() {
         />
       </div>
 
+      {/* Telefonnummer-Feld */}
+      <div>
+        <label htmlFor="phone" className="block text-lg font-medium pl-4">
+          Telefonnummer
+        </label>
+        <input
+          id="phone"
+          type="tel"
+          name="phone"
+          required
+          pattern="^\+?[0-9\s\-]{7,15}$"
+          className="mt-2 block w-full px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2"
+        />
+        <ValidationError
+          prefix="Phone"
+          field="phone"
+          errors={state.errors}
+          className="text-red-500 text-sm mt-2"
+        />
+      </div>
+
       {/* Betreff-Feld */}
       <div>
-        <label
-          htmlFor="subject"
-          className="block text-lg font-medium pl-4"
-        >
+        <label htmlFor="subject" className="block text-lg font-medium pl-4">
           Betreff
         </label>
         <input
@@ -86,10 +98,7 @@ function ContactForm() {
 
       {/* Nachrichten-Feld */}
       <div>
-        <label
-          htmlFor="message"
-          className="block text-lg font-medium pl-4"
-        >
+        <label htmlFor="message" className="block text-lg font-medium pl-4">
           Ihre Nachricht
         </label>
         <textarea
@@ -110,7 +119,7 @@ function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="w-1/2 py-2 px-4 pb-4 text-white font-semibold rounded-md shadow-md"
+        className="w-1/2 py-2 px-4 pb-4 text-white font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
       >
         {state.submitting ? "Senden..." : "Absenden"}
       </button>

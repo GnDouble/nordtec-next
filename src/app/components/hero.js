@@ -15,15 +15,6 @@ function Hero() {
         <h2 className="md:max-w-xl md:mx-auto lg:mx-0 lg:max-w-full md:text-center lg:text-left text-gray-600">
           Ihre Wünsche, unser Versprechen – maßgeschneiderte Elektro-Lösungen
           für Sie.
-          <p>
-            Wir bieten maßgeschneiderte Elektrolösungen, die auf modernster
-            Technik basieren und höchsten Sicherheitsstandards entsprechen.
-          </p>
-          <p>
-            Dabei legen wir besonderen Wert auf erneuerbare Energien und
-            nachhaltige Technologien, um eine zukunftssichere Stromversorgung zu
-            gewährleisten.
-          </p>
         </h2>
         <div className="flex gap-x-5 flex-col gap-y-2.5 lg:flex-row">
           <a
