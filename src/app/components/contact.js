@@ -6,8 +6,6 @@ const phone_url = "/phone.svg";
 function Contact() {
   return (
     <div className="text-left space-y-4">
-      <h1>Kontakt</h1>
-
       <div className="flex items-center space-x-2">
         <h2>E-Mail</h2>
         <img src={email_url} alt="E-Mail" className="w-6 h-6 opacity-80" />

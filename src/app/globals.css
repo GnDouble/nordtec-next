@@ -6,7 +6,7 @@
   --bg: slate-200;
   --fg: gray-700;
   --highlight-color: #fbbf24;
-  --primary-color: #4169E1;
+  --primary-color: ;
   --footer-bg:#4169E1;
   --card-bg:#ffffff;
 }
@@ -52,12 +52,9 @@ button:hover {
   background-color: #304995; 
 }
 footer {
-  background-color: var(--footer-bg); 
-  color: white;
+  color: black;
 }
-footer a {
-  color: white; 
-}
+
 footer a:hover {
   color: var(--highlight-color); 
 }
