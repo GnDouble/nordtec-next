@@ -1,47 +1,37 @@
 import React from "react";
 import Image from "next/image";
 
+const services = [
+  { id: 1, title: "Terminplanung", description: "Professionelle Planung & Koordination.", image: "/ceo.webp" },
+  { id: 2, title: "Elektroinstallation", description: "Moderne Lösungen für Ihr Zuhause.", image: "/ceo.webp" },
+  { id: 3, title: "Gerätewartung", description: "Regelmäßige Wartung für lange Lebensdauer.", image: "/ceo.webp" },
+  { id: 4, title: "Sicherheitsprüfung", description: "Schutz & Sicherheit für Ihr Gebäude.", image: "/ceo.webp" },
+  { id: 5, title: "Smart Home", description: "Intelligente Technologien für mehr Komfort.", image: "/ceo.webp" },
+  { id: 6, title: "Stromanschlüsse", description: "Professionelle Installation von Anschlüssen.", image: "/ceo.webp" },
+];
+
 function Mainsection() {
   return (
-  
-    <div className="grid grid-cols-2 gap-8 md:gap-4 mt-8">
-      {/* Responsive Grid */}
-      <div className="p-6 shadow-lg">
-        <h2>Terminplanung</h2>
-        <p>Nordtec auf die 1. Seite von Google bringen.</p>
-      </div>
-      <div className="p-6 shadow-lg">
-        <h2>Feature 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div className="p-6 shadow-lg">
-        <h2>Feature 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div className="p-6 shadow-lg">
-        <h2>Feature 4</h2>
-        <p>Nordtec auf die 1. Seite von Google bringen.</p>
-      </div>
-      <div className="p-6 shadow-lg">
-        <h2>Feature 5</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div className="p-6 shadow-lg">
-        <h2>Feature 6</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div className="p-6 shadow-lg">
-        <h2>Feature 7</h2>
-        <p>Nordtec auf die 1. Seite von Google bringen.</p>
-      </div>
-      <div className="p-6 shadow-lg">
-        <h2>Feature 8</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div className="p-6 shadow-lg">
-        <h2>Feature 9</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+      {services.map((service) => (
+        <div key={service.id} className="p-4 shadow-lg rounded-lg bg-white">
+          {/* Bild */}
+          <div className="relative w-full h-52 rounded-lg overflow-hidden flex justify-center items-center">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  width={300}
+                  height={400}
+                />
+                </div>
+
+                {/* Titel & Beschreibung */}
+          <div className="mt-4 text-center">
+            <h2 className="text-xl font-semibold">{service.title}</h2>
+            <p className="text-gray-600 mt-2">{service.description}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
