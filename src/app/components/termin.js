@@ -3,33 +3,39 @@ import Image from "next/image";
 
 const Termin = () => {
   return (
-    <div id="#about"className="p-6 flex items-center gap-6 rounded-xl bg-white">
+    <div
+      id="termin"
+      className="flex flex-col md:flex-row items-center gap-6 bg-white shadow-lg rounded-2xl p-6 md:p-10 mx-6"
+    >
       {/* Left Side - Image */}
-      <Image
-        src="/calendar.webp"
-        alt="Terminplanung"
-        width={150}
-        height={150}
-        className="rounded-2xl w-1/3 h-auto object-cover"
-      />
+      <div className="flex-shrink-0 w-full md:w-1/3">
+        <Image
+          src="/calendar.webp"
+          alt="Terminplanung"
+          width={300}
+          height={200}
+          className="rounded-xl w-full h-auto object-cover"
+        />
+      </div>
 
       {/* Right Side - Content */}
-      <div className="flex-1">
-        <h1 className="text-4xl font-semibold text-primary-color">Terminplanung</h1>
-        <p className="text-gray-600">
+      <div className="flex-1 text-center md:text-left space-y-4">
+        <h2 className="text-3xl font-bold text-primary-color">Terminplanung</h2>
+        <p className="text-gray-600 leading-relaxed">
           Vereinbaren Sie unkompliziert einen Termin mit unseren Experten.
         </p>
-        <p className="text-gray-600">
+        <p className="text-gray-600 leading-relaxed">
           Egal ob eine Erstberatung, eine detaillierte Planung oder die
           Umsetzung eines Projekts – wir sind flexibel und richten uns nach
           Ihren Wünschen. Unser Team sorgt dafür, dass Ihre Anliegen schnell,
           effizient und nach höchsten Qualitätsstandards bearbeitet werden.
         </p>
+
         <a
           href="#kontakt"
-          className="flex w-full lg:w-fit bg-primary-color items-center text-white justify-center rounded-lg px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200"
+          className="inline-block bg-primary-color text-white font-semibold px-6 py-3 rounded-lg hover:shadow-lg transition duration-200"
         >
-          <span>Jetzt Termin vereinbaren</span>
+          Jetzt Termin vereinbaren
         </a>
       </div>
     </div>

@@ -1,43 +1,51 @@
 import React from "react";
 import Image from "next/image";
+import { TextLoopCustomVariantsTransition } from "./text-ani";
 
 function Hero() {
   return (
     <div
       id="hero"
-      className=" w-full px-7 lg:px-10 max-w-full mx-auto flex flex-col gap-y-10 lg:flex-row items-center gap-x-10 justify-center py-10 lg:py-14"
+      className="w-full px-6 sm:px-10 max-w-full flex flex-col-reverse lg:flex-row items-center gap-y-10 gap-x-16 xl:gap-x-24 justify-center py-10 lg:py-20 xl:py-24 text-center lg:text-left"
       style={{ backgroundColor: "var(--bg)", color: "var(--fg)" }}
     >
-      <div className="lg:w-[650px] lg:px-5 flex flex-col gap-y-5">
-        <h1 className="text-4xl md:text-5xl xl:text-[50px] leading-[1.2] md:max-w-xl md:mx-auto md:text-center lg:text-left lg:mx-0 lg:max-w-full font-semibold text-gray-900">
+      {/* Left Side - Text Content */}
+      <div className="lg:w-[750px] xl:w-[900px] flex flex-col gap-y-6 xl:gap-y-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] leading-[1.2] font-semibold text-gray-900">
           Energie, die Sie bewegt – zuverlässiger Service für Ihre elektrischen
           Bedürfnisse.
         </h1>
-        <h2 className="md:max-w-xl md:mx-auto lg:mx-0 lg:max-w-full md:text-center lg:text-left text-gray-600">
-          Ihre Wünsche, unser Versprechen – maßgeschneiderte Elektro-Lösungen
-          für Sie.
+        <h2 className="text-gray-600 text-lg md:text-xl xl:text-2xl">
+          Ihre Wünsche, unser Versprechen – wir bieten Ihnen maßgeschneiderte Elektro-Lösungen, die exakt auf Ihre Bedürfnisse zugeschnitten sind.
+          <TextLoopCustomVariantsTransition />
         </h2>
-        <div className="flex gap-x-5 flex-col gap-y-2.5 lg:flex-row">
+        
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 items-center sm:justify-center lg:justify-start">
           <a
             href="#kontakt"
-            className="flex w-full lg:w-fit bg-primary-color items-center text-white justify-center rounded-lg px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200"
+            className="w-full sm:w-fit bg-primary-color text-white text-lg md:text-xl font-semibold px-8 py-3.5 rounded-lg hover:shadow-lg transition duration-200 text-center"
           >
-            <span>Kontakt</span>
+            Kontakt
           </a>
           <a
-            href="#"
-            className="flex w-full lg:w-fit items-center text-gray-600 justify-center rounded-lg border border-[#6A65FF] px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200"
+            href="#leistungen"
+            className="w-full sm:w-fit border border-primary-color text-gray-600 text-lg md:text-xl font-semibold px-8 py-3.5 rounded-lg hover:shadow-lg transition duration-200 text-center"
           >
-            <span>Leistungen</span>
+            Leistungen
           </a>
         </div>
       </div>
-      <div className="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative z-0">
+
+      {/* Right Side - Image */}
+      <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[550px] xl:w-[650px] max-w-xl xl:max-w-2xl mx-auto">
         <Image
-          className="rounded-3xl w-full h-full"
+          className="rounded-3xl w-full h-auto"
           src="/multiM.webp"
-          width={800}
-          height={600}
+          width={1000}
+          height={750}
+          priority={true} // {false} | {true}
           alt="Elektriker-Ingenieur verwendet ein Multimeter, um die elektrische Installation und Stromleitung in einem elektrischen System-Schaltschrank zu testen."
         />
       </div>
