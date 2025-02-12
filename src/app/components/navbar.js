@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null); // Reference to the menu
+  const menuRef = useRef(null);
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -29,16 +30,17 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav id="nav" className="p-4 bg-primary-color">
+    <nav className="p-4 bg-[#111ac9] text-white">
+
       <div className="container mx-auto flex justify-between items-center">
         <div>IMAGE XXXX</div>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6">
-          <li><a href="#hero">Startseite</a></li>
-          <li><a href="#leistungen">Leistungen</a></li>
-          <li><a href="#about">Über uns</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><Link href="#hero" scroll={true}>Startseite</Link></li>
+          <li><Link href="#leistungen" scroll={true}>Leistungen</Link></li>
+          <li><Link href="#about" scroll={true}>Über uns</Link></li>
+          <li><Link href="#kontakt" scroll={true}>Kontakt</Link></li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -48,15 +50,10 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-40" /> // Overlay for clicking outside
-      )}
+      {isOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-40" />} 
 
       {isOpen && (
-        <div
-          ref={menuRef}
-          className="fixed inset-y-0 left-0 bg-primary-color opacity- p-4 w-3/4 h-full z-50 transition-transform"
-        >
+        <div ref={menuRef} className="fixed inset-y-0 left-0 bg-primary-color p-4 w-3/4 h-full z-50 transition-transform">
           <button 
             className="absolute top-4 right-4 text-white text-2xl"
             onClick={() => setIsOpen(false)}
@@ -64,10 +61,10 @@ const Navbar = () => {
             ✖
           </button>
           <ul className="flex flex-col space-y-4 text-white mt-10">
-            <li onClick={() => setIsOpen(false)}><a href="#hero">Startseite</a></li>
-            <li onClick={() => setIsOpen(false)}><a href="#leistungen">Leistungen</a></li>
-            <li onClick={() => setIsOpen(false)}><a href="#about">Über uns</a></li>
-            <li onClick={() => setIsOpen(false)}><a href="#kontakt">Kontakt</a></li>
+            <li onClick={() => setIsOpen(false)}><Link href="#hero" scroll={true}>Startseite</Link></li>
+            <li onClick={() => setIsOpen(false)}><Link href="#leistungen" scroll={true}>Leistungen</Link></li>
+            <li onClick={() => setIsOpen(false)}><Link href="#about" scroll={true}>Über uns</Link></li>
+            <li onClick={() => setIsOpen(false)}><Link href="#kontakt" scroll={true}>Kontakt</Link></li>
           </ul>
         </div>
       )}

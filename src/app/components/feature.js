@@ -5,7 +5,7 @@ import services  from "../data/service";
 
 function Mainsection() {
   return (
-    <section className="p-4 lg:p-8 bg-gray-100 text-gray-800">
+    <section id="leistungen" className="p-4 lg:p-8 bg-gray-100 text-gray-800">
       <div className="container mx-auto space-y-12">
         {services.map((service, index) => (
           <div
@@ -28,14 +28,8 @@ function Mainsection() {
 
             {/* Text Content */}
             <div className="flex flex-col justify-center flex-1 p-6 bg-white">
-              <span className="text-xs uppercase text-gray-600">
-                Unsere Leistungen
-              </span>
               <h3 className="text-3xl font-bold">{service.title}</h3>
               <p className="my-6 text-gray-600">{service.description}</p>
-              <button className="self-start px-4 py-2 text-white bg-blue-600 rounded-md shadow-md hover:bg-blue-700 transition">
-                Mehr erfahren
-              </button>
             </div>
           </div>
         ))}

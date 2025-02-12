@@ -6,10 +6,11 @@
   --bg: slate-200;
   --fg: gray-700;
   --highlight-color: #fbbf24;
-  --primary-color: #4169e1cf;
-  --footer-bg:#4169e1cf;
-  --card-bg:#ffffff;
+  --primary-color: #111ac9;
+  --footer-bg: #4169e1cf;
+  --card-bg: #ffffff;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,13 +18,16 @@ html {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color:#4169e1cf;
+    --primary-color: #1E3A8A;
+    /* Dark mode color */
   }
 }
+
+
 @font-face {
   font-family: 'Inter';
   src: url('/fonts/Inter-Regular.woff2') format('woff2'),
-       url('/fonts/Inter-Regular.ttf') format('truetype');
+    url('/fonts/Inter-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -32,7 +36,7 @@ html {
 @font-face {
   font-family: 'Inter';
   src: url('/fonts/Inter-Bold.woff2') format('woff2'),
-       url('/fonts/Inter-Bold.ttf') format('truetype');
+    url('/fonts/Inter-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -45,37 +49,41 @@ body {
 }
 
 nav {
-  background-color: #4169E1; 
+  background-color: var(--primary-color);
 }
+
 nav a {
-  color: white; 
+  color: white;
 }
+
 nav a:hover {
-  color: #fbbf24; 
+  color: #fbbf24;
 }
 
 header {
-  background-color: #e5e7eb; 
-  color: #4169E1; 
+  background-color: #e5e7eb;
+  color: var(--primary-color);
 }
+
 header p {
-  color: #374151; 
+  color: #374151;
 }
 
 button {
-  background-color: #4169E1; 
+  background-color: #4169E1;
   color: white;
 }
 
 button:hover {
-  background-color: #304995; 
+  background-color: #304995;
 }
+
 footer {
   color: black;
 }
 
 footer a:hover {
-  color: var(--highlight-color); 
+  color: var(--highlight-color);
 }
 
 @layer base {
@@ -106,6 +114,7 @@ footer a:hover {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -138,6 +147,7 @@ footer a:hover {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

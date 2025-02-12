@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { TextLoopCustomVariantsTransition } from "./text-ani";
 
 function Hero() {
@@ -20,21 +21,14 @@ function Hero() {
           <TextLoopCustomVariantsTransition />
         </h2>
         
-
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 items-center sm:justify-center lg:justify-start">
-          <a
-            href="#kontakt"
-            className="w-full sm:w-fit bg-primary-color text-white text-lg md:text-xl font-semibold px-8 py-3.5 rounded-lg hover:shadow-lg transition duration-200 text-center"
-          >
+          <Link href="#kontakt" scroll={true} className="w-full sm:w-fit bg-primary-color text-white text-lg md:text-xl font-semibold px-8 py-3.5 rounded-lg hover:shadow-lg transition duration-200 text-center">
             Kontakt
-          </a>
-          <a
-            href="#leistungen"
-            className="w-full sm:w-fit border border-primary-color text-gray-600 text-lg md:text-xl font-semibold px-8 py-3.5 rounded-lg hover:shadow-lg transition duration-200 text-center"
-          >
+          </Link>
+          <Link href="#leistungen" scroll={true} className="w-full sm:w-fit border border-primary-color text-gray-600 text-lg md:text-xl font-semibold px-8 py-3.5 rounded-lg hover:shadow-lg transition duration-200 text-center">
             Leistungen
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -45,7 +39,7 @@ function Hero() {
           src="/multiM.webp"
           width={1000}
           height={750}
-          priority={true} // {false} | {true}
+          priority={true}
           alt="Elektriker-Ingenieur verwendet ein Multimeter, um die elektrische Installation und Stromleitung in einem elektrischen System-Schaltschrank zu testen."
         />
       </div>

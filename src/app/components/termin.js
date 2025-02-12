@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 
 const Termin = () => {
   return (
@@ -31,12 +33,13 @@ const Termin = () => {
           effizient und nach höchsten Qualitätsstandards bearbeitet werden.
         </p>
 
-        <a
+        <Link
           href="#kontakt"
+          scroll = {true}
           className="inline-block bg-primary-color text-white font-semibold px-6 py-3 rounded-lg hover:shadow-lg transition duration-200"
         >
           Jetzt Termin vereinbaren
-        </a>
+        </Link>
       </div>
     </div>
   );
