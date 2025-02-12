@@ -13,7 +13,7 @@ import ScrollToTop from "./components/ScrollToTop";
 // });
 
 export const metadata = {
-  title: "NORDTEC – Experten für Elektrotechnik",
+  title: "NORDTEC – Elektrotechnik",
   description: "NORDTEC ist dein zuverlässiger Partner für Elektroinstallationen, Smart Home, Gerätewartung und Sicherheitsprüfungen. Professionelle Planung und moderne Technik für dein Zuhause oder Unternehmen.",
 };
 

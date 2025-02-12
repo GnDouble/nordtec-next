@@ -58,7 +58,7 @@ const Footer = () => {
         <Contact />
         <ul className="mt-4 text-gray-700">
           <li>Montag bis Freitag: 8:00 - 20:00 Uhr</li>
-          <li>Wochenende: 10:00 - 22:00 Uhr</li>
+          <li>Wochenende: 08:00 - 16:00 Uhr</li>
         </ul>
         <ul className="mt-4 flex justify-center lg:justify-start gap-4">
           <li>

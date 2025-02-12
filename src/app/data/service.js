@@ -3,7 +3,7 @@ const services = [
     id: 1,
     title: "Neubau Installation/Altbausanierung",
     description: "Professionelle Planung & Koordination.",
-    image: "/ceo.webp",
+    image: "/schrank.webp",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const services = [
     id: 5,
     title: "Netzwerktechnik",
     description: "Schutz & Sicherheit für Ihr Gebäude.",
-    image: "/ceo.webp",
+    image: "/lan.webp",
   },
   {
     id: 6,
