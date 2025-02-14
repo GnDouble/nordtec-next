@@ -33,7 +33,7 @@ const services = [
     id: 6,
     title: "Klingel und Sprechanlagen",
     description: "Intelligente Technologien für mehr Komfort.",
-    image: "/ceo.webp",
+    image: "/klingel.webp",
   },
   {
     id: 7,

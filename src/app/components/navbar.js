@@ -37,10 +37,11 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6">
-          <li><Link href="#hero" scroll={true}>Startseite</Link></li>
-          <li><Link href="#leistungen" scroll={true}>Leistungen</Link></li>
-          <li><Link href="#about" scroll={true}>Über uns</Link></li>
+          <li><Link href="/" scroll={true}>Startseite</Link></li>
+          <li><Link href="/#leistungen" scroll={true}>Leistungen</Link></li>
+          <li><Link href="/#about" scroll={true}>Über uns</Link></li>
           <li><Link href="#kontakt" scroll={true}>Kontakt</Link></li>
+          <li><Link href="/karriere" scroll={true}>Karriere</Link></li>
         </ul>
 
         {/* Mobile Menu Button */}

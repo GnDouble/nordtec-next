@@ -7,10 +7,10 @@ const RightsFooter = () => {
       <Link href="/impressum" className="my-0.5">
         Impressum
       </Link>
-      <Link href="/datenschutz" className="my-0.5">
+      <Link href="/datenschutzerklaerung" className="my-0.5">
         Datenschutz
       </Link>
-      <Link href="#nav" scroll={true} className="my-0.5">
+      <Link href="/" scroll={true} className="my-0.5">
         &copy; 2025 NORDTEC Alle Rechte vorbehalten.
       </Link>
     </footer>

@@ -1,12 +1,12 @@
 // src/pages/Home.jsx
 import React from "react";
 import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Footer from "./components/footer";
-import Mainsection from "./components/feature";
-import RightsFooter from "./components/rights";
-import Termin from "./components/termin";
 import AboutUs from "./components/about";
+import Termin from "./components/termin";
+import Mainsection from "./components/feature";
+import Footer from "./components/footer";
+import RightsFooter from "./components/rights";
+
 
 const Home = () => {
   return (
