@@ -54,7 +54,7 @@ const Navbar = () => {
       {isOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-40" />} 
 
       {isOpen && (
-        <div ref={menuRef} className="fixed inset-y-0 left-0 bg-primary-color p-4 w-3/4 h-full z-50 transition-transform">
+        <div ref={menuRef} className="fixed inset-y-0 left-0 bg-[#111ac9] p-4 w-3/4 h-full z-50 transition-transform">
           <button 
             className="absolute top-4 right-4 text-white text-2xl"
             onClick={() => setIsOpen(false)}
