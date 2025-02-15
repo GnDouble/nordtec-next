@@ -15,7 +15,7 @@ function Mainsection() {
             }`}
           >
             {/* Image */}
-            <div className="relative w-full lg:w-1/2 h-auto flex justify-center items-center bg-gray-300">
+            <div className="relative w-full lg:w-1/2 h-auto flex justify-center items-center bg-white">
               <Image
                 src={service.image}
                 alt={service.title}

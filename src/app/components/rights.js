@@ -14,7 +14,7 @@ const RightsFooter = () => {
         &copy; 2025 NORDTEC Alle Rechte vorbehalten.
       </Link>
       <Link href="/karriere" className="my-0.5">
-        karriere
+        Karriere
       </Link>
     </footer>
   );
