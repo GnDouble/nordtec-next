@@ -15,13 +15,13 @@ function Mainsection() {
             }`}
           >
             {/* Image */}
-            <div className="relative w-full lg:w-1/2 h-64 lg:h-auto flex justify-center items-center bg-gray-300">
+            <div className="relative w-full lg:w-1/2 h-auto flex justify-center items-center bg-gray-300">
               <Image
                 src={service.image}
                 alt={service.title}
                 width={400}
                 height={300}
-                className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105"
+                className="w-full max-h-56 sm:max-h-64 md:max-h-72 lg:max-h-none object-contain rounded-lg transition-transform duration-300 ease-in-out hover:scale-105"
                 priority
               />
             </div>
