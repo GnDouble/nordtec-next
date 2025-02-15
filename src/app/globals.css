@@ -48,39 +48,16 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-nav {
-  background-color: var(--primary-color);
-}
 
-nav a {
-  color: white;
-}
 
 nav a:hover {
   color: #fbbf24;
-}
-
-header {
-  background-color: #e5e7eb;
-  color: var(--primary-color);
-}
-
-header p {
-  color: #374151;
-}
-
-button {
-  background-color: #4169E1;
-  color: white;
-}
+} 
 
 button:hover {
   background-color: #304995;
 }
 
-footer {
-  color: black;
-}
 
 footer a:hover {
   color: var(--highlight-color);

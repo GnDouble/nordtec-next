@@ -36,7 +36,7 @@ const Termin = () => {
         <Link
           href="#kontakt"
           scroll = {true}
-          className="inline-block bg-primary-color text-white font-semibold px-6 py-3 rounded-lg hover:shadow-lg transition duration-200"
+          className="inline-block bg-primary-color text-white font-semibold px-6 py-3 rounded-lg hover:shadow-lg hover:bg-blue-700 transition duration-200"
         >
           Jetzt Termin vereinbaren
         </Link>

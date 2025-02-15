@@ -45,7 +45,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden bg-[#111ac9]" onClick={() => setIsOpen(!isOpen)}>
           ☰
         </button>
       </div>
@@ -56,16 +56,17 @@ const Navbar = () => {
       {isOpen && (
         <div ref={menuRef} className="fixed inset-y-0 left-0 bg-[#111ac9] p-4 w-3/4 h-full z-50 transition-transform">
           <button 
-            className="absolute top-4 right-4 text-white text-2xl"
+            className="absolute top-4 right-4 bg-[#111ac9] text-white text-2xl"
             onClick={() => setIsOpen(false)}
           >
             ✖
           </button>
           <ul className="flex flex-col space-y-4 text-white mt-10">
-            <li onClick={() => setIsOpen(false)}><Link href="#hero" scroll={true}>Startseite</Link></li>
-            <li onClick={() => setIsOpen(false)}><Link href="#leistungen" scroll={true}>Leistungen</Link></li>
-            <li onClick={() => setIsOpen(false)}><Link href="#about" scroll={true}>Über uns</Link></li>
+            <li onClick={() => setIsOpen(false)}><Link href="/" scroll={true}>Startseite</Link></li>
+            <li onClick={() => setIsOpen(false)}><Link href="/#leistungen" scroll={true}>Leistungen</Link></li>
+            <li onClick={() => setIsOpen(false)}><Link href="/#about" scroll={true}>Über uns</Link></li>
             <li onClick={() => setIsOpen(false)}><Link href="#kontakt" scroll={true}>Kontakt</Link></li>
+            <li onClick={() => setIsOpen(false)}><Link href="/karriere" scroll={true}>Karriere</Link></li>
           </ul>
         </div>
       )}

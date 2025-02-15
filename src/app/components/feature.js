@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import services  from "../data/service";
+import services from "../data/service";
 
 function Mainsection() {
   return (
@@ -27,9 +27,13 @@ function Mainsection() {
             </div>
 
             {/* Text Content */}
-            <div className="flex flex-col justify-center flex-1 p-6 bg-white">
-              <h3 className="text-3xl font-bold">{service.title}</h3>
-              <p className="my-6 text-gray-600">{service.description}</p>
+            <div className="flex flex-col justify-center flex-1 p-4 sm:p-6 bg-white overflow-hidden">
+              <h3 className="text-xl sm:text-3xl font-bold break-words whitespace-normal">
+                {service.title}
+              </h3>
+              <p className="my-4 sm:my-6 text-gray-600">
+                {service.description}
+              </p>
             </div>
           </div>
         ))}
